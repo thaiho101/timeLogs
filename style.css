@@ -1,0 +1,217 @@
+body {
+    font-family: arial;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    height: 100vh;
+    width: 100%;
+}
+
+/* #notification {
+     display:none; 
+     position:fixed; 
+     top:20px; 
+     left:50%; 
+     transform:translateX(-50%); 
+     background:#333; 
+     color:#fff; 
+     padding:15px 25px; 
+     border-radius:8px; 
+     box-shadow:0 0 10px rgba(0,0,0,0.3); 
+     z-index:1000;
+} */
+
+#notification {
+    color: white;
+    display: none;
+    position: fixed;
+    left: 43%;
+    top: 20px;
+    width: 15%;
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 5%;
+    z-index: 1000;
+    box-shadow: 1px 1px 15px rgb(4, 3, 3); 
+    
+}
+
+#menu-Nav {
+    flex: 1;
+    /* border: 1px solid blue; */
+}
+
+#container {
+    flex: 5;
+    /* border: 1px solid red; */
+    justify-content: center;
+    text-align: center;
+}
+
+#content {
+    /* border: 2px dashed black; */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.content-child {
+    border: 4px outset black;
+    width: 20%;
+    padding-bottom: 20px;
+    border-radius: 16px;
+    background-image: url(./background/bg3.png);
+    background-position: center 60%;
+    background-size: 250%;
+}
+
+#header-table {
+    color: gold;
+}
+
+#display {
+    display: flex;   
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.digital-slot { 
+    font-size: 35px;
+    width: 40px;
+    height: 50px;
+    line-height: 50px;
+    background-image: linear-gradient(white, rgb(218, 217, 217), white);
+    text-align: center;
+    border-radius: 8px;
+    border: 2px outset goldenrod;
+}
+
+.num-pad {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    gap: 10px;
+    padding-top: 5%;
+}
+
+.btn {
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 50px;
+    /* background-image: linear-gradient(white, rgb(219, 217, 217), white); */
+    background-image: linear-gradient(white, transparent, white);
+    /* outline: none; */
+    background-position: center 60%;
+    background-size: 120%;
+    background-image: url(./background/bbWhite.png);
+    border: 1px outset silver;
+    box-shadow: 0px 0px 10px yellow;
+    cursor: pointer;
+}
+
+/* .btn:hover {
+        background-image: url(./background/bbBlue.png);
+        box-shadow: 1px 1px 15px white;
+} */
+
+.btn.allow-hover:hover {
+    background-image: url(./background/bbBlue.png);
+    box-shadow: 1px 1px 15px white;
+}
+
+.btn:active {
+    background-image: url(./background/bbYellow1.png);
+    border-color: white;
+    box-shadow: 1px 1px 15px yellow;
+    border: 1px inset silver;
+}
+
+#footer {
+    flex: 1;
+    display: flex;
+    /* border: 1px solid green; */
+    align-items: center;
+    justify-content: center;
+    color: rgb(123, 121, 121);
+    background-color: rgb(238, 236, 236);
+}
+
+
+
+
+
+@media (max-width: 450px) and (hover: none) and (pointer: coarse) { /* Your Styles... */ 
+
+.btn {
+    touch-action: manipulation;
+}
+
+.btn:hover {
+    /* background-image: linear-gradient(white, white, white); */
+
+}
+
+    .content-child {
+    border: 4px outset black;
+    width: 70%;
+    padding-bottom: 20px;
+    border-radius: 16px;
+    background-image: url(./background/bg3.png);
+    background-position: center 60%;
+    background-size: 250%;
+    padding-bottom: 50px;
+}
+
+body {
+    /* background-color: black; */
+    background-image: url(./background/galaxy5.png);
+    /* background-position: center 60%; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120%;
+}
+
+#header-title {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: gold;
+    text-align: center;
+    filter: drop-shadow(0px 0px 10px white);
+}
+
+.content-child {
+    border: 4px outset white;
+}
+
+#footer {
+    color: gold;
+    background-color: transparent;
+}
+
+.btn.active {
+  background-image: url(./background/bbYellow1.png);
+  border-color: white;
+  box-shadow: 1px 1px 15px yellow;
+  border: 1px inset silver;
+}
+
+#notification {
+    color: white;
+    border: 1px solid white;
+    position: fixed;
+    left: 24%;
+    top: 20px;
+    width: 54%;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 5%;
+    box-shadow: 1px 1px 15px white; 
+}
+
+}
