@@ -9,8 +9,10 @@
 
     </head>
     <body>
-        <div style='color: white; display: flex; justify-content: right; width: 95%;'>
-            <a href='./timeTracking/' style='color: goldenrod; filter: drop-shadow(0px 0px 16px white);'><i class='far fa-clock'></i> Time Tracking</a>
+        <div id='menu-nav'>
+            <a class='menu-sites' href="./createCode/"><i class='fa fa-pencil-square'></i> Create Code</a>
+            <span style='width: 15px;'></span>
+            <a class='menu-sites' href='./timeTracking/' style=''><i class='far fa-clock'></i> Time Tracking</a>
         </div>
         <div id='notification'></div>
         <div id='menu-Nav'>

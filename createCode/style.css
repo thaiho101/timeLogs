@@ -1,0 +1,129 @@
+body {
+    /* font-family:Arial, Helvetica, sans-serif; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+#homepage {
+    color: black;
+    border: .9px outset black;
+    border-radius: 8px;
+    padding: 5px;
+    background-image: linear-gradient(white, lightblue, white);
+    background-image: linear-gradient(to bottom, rgb(200, 231, 241) 0%, white 20%, rgb(212, 237, 246) 50%, rgb(225, 244, 248) 70%, rgb(220, 218, 218) 100%);
+    cursor: pointer;
+
+    box-shadow: 1px 1px 10px silver;
+}
+
+#homepage:hover {
+    background-image: linear-gradient(white, rgb(87, 213, 255), white);
+}
+
+#homepage:active {
+    background-image: linear-gradient(white, white, white);
+}
+
+
+
+.time-range-form-cover {
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#time-range-form {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    border: 1px outset black;
+    border-radius: 8px;
+
+    padding: 10px;
+    background-color: rgb(253, 241, 213);
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(245, 207, 161) 15%, rgb(247, 220, 157) 20%, rgb(255, 224, 151) 50%, rgb(254, 233, 184) 70%, rgb(255, 255, 255) 100%);
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.info-verify {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+input {
+    font-size: 13px;
+    font-weight: bold;
+    color: black;
+    height: 25px;
+    width: 150px;
+    border: .9px outset black;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom, rgb(241, 240, 200) 0%, white 20%, rgb(246, 238, 212) 50%, rgb(248, 240, 225) 70%, rgb(220, 218, 218) 100%);
+}
+
+#createCodeButton {
+    font-weight: normal;
+    color: black;
+    border-radius: 8px;
+    border: 1px outset silver;
+    background-image: linear-gradient(white, rgb(213, 230, 173), white);
+    padding: 5px;
+    cursor: pointer;
+    width: 50%;
+    box-shadow: 1px 1px 10px silver;
+}
+
+#createCodeButton:hover {
+    background-image: linear-gradient(white, silver, white);
+}
+
+#createCodeButton:active {
+    background-image: linear-gradient(white, white, white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 450px) and (hover: none) and (pointer: coarse) {
+#time-range-form {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.info-verify {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    width: 100%;
+}
+}
