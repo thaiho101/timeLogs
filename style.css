@@ -1,22 +1,40 @@
 body {
-    font-family: arial;
+    /* font-family: arial; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     flex-direction: column;
     /* border: 1px solid black; */
     height: 100vh;
     width: 100%;
+    background-image: url(./background/galaxy10.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 }
 #menu-nav {
     color: white; 
     display: flex; 
-    justify-content: right; 
-    width: 95%;
+    justify-content: center; 
+    width: 100%;
 }
 
 .menu-sites {
     color: goldenrod; 
-    filter: drop-shadow(0px 0px 16px white);
+    filter: drop-shadow(0px 0px 16px yellow);
     text-decoration: none;
+    cursor: pointer;
+}
+
+.menu-sites:hover {
+    color: white;
+    filter: drop-shadow(0px 0px 16px black);
+}
+
+#header-title {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
 }
 
 /* #notification {
@@ -79,6 +97,14 @@ body {
     background-image: url(./background/bg3.png);
     background-position: center 60%;
     background-size: 250%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.495);
+    transform: transition .1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+
+.content-child:hover {
+    box-shadow: 0px 0px 40px rgb(255, 255, 255);
+    transition: .7s ease-in-out;
 }
 
 #header-table {
@@ -149,8 +175,11 @@ body {
     /* border: 1px solid green; */
     align-items: center;
     justify-content: center;
-    color: rgb(123, 121, 121);
-    background-color: rgb(238, 236, 236);
+    color: rgb(144, 141, 141);
+    background-color: rgba(0, 0, 0, 0.541);
+    border-radius: 8px;
+    width: 100%;
+    margin-left: -.5%;
 }
 
 
@@ -186,6 +215,10 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 120%;
+}
+
+.menu-sites {
+    color: goldenrod;
 }
 
 #header-title {
