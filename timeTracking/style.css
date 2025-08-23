@@ -65,6 +65,7 @@ label {
 }
 
 input {
+    text-align: right;
     font-size: 13px;
     font-weight: bold;
     color: black;

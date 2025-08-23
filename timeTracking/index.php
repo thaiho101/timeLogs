@@ -113,7 +113,7 @@ $conn = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
                                     <td>" . $dataRow['code'] . "</td>
                                     <td>" . date('l', strtotime($dataRow['login_time'])) . "</td>
                                     <td>" . date('m/d/Y H:i:s', $login_timeStamp) . "</td>
-                                    <td>" . date('m/d/Y H:i:s', $logout_timeStamp) . "</td>
+                                    <td>" . $logoutTimeData . "</td>
                                     <td>" . $totalTime . "</td>
                                 </tr>";
                             $amountOfTime += $diff;
