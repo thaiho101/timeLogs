@@ -92,11 +92,21 @@ $conn = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
                             $login_timeStamp = strtotime($login_time);
                             $logout_timeStamp = strtotime($logout_time);
 
-                            $diff = $logout_timeStamp - $login_timeStamp;
+                            if ($logout_timeStamp) {
+                                $diff = $logout_timeStamp - $login_timeStamp;
 
-                            $hours = floor($diff / 3600);
-                            $seconds = floor(($diff % 3600) / 60);
-                            $totalTime = "{$hours} hrs {$seconds} minutes";
+                                $hours = floor($diff / 3600);
+                                $seconds = floor(($diff % 3600) / 60);
+                                $totalTime = "{$hours} hrs {$seconds} minutes";
+
+                                $logoutTimeData = date('m/d/Y H:i:s', $logout_timeStamp);
+                            } else {
+                                $logoutTimeData = "Still logged in";
+                                $totalTime = "0";
+                            }
+
+
+
                             $evenOddClass = ($numOrder % 2 === 0) ? 'evenClass' : 'oddClass';
                             echo "<tr class='{$evenOddClass}'>
                                     <td>" . $dataRow['first_name'] . "</td>
