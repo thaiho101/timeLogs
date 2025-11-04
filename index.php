@@ -58,7 +58,7 @@
         </div>
 
         <div id='footer'>
-            <p>&copy; <?php echo date('Y');?> Developed by Nam Ho</p>
+            <p>&copy; <?php echo date('Y');?> TimeLogs by N.H.</p>
         </div>
         <script src="script.js"></script>
     </body>
