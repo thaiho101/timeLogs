@@ -9,7 +9,7 @@ body {
     background-image: url(./background/galaxy10.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
 }
 #menu-nav {
     color: white; 
